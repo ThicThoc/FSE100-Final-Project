@@ -1,2 +1,9 @@
 # FSE100-Final-Project
-source code for Electrosity's FSE 100 final project
+
+Source Code for Electrosity's FSE 100 final project
+
+---
+
+## Set up the Raspberry Pi
+
+Follow instructions [here](pi_setup.md)
