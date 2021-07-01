@@ -24,6 +24,28 @@ Source Code for Electrosity's FSE 100 final project
     git -C Documents/Dev/bot pull origin main
     ```
 
+## Start Server
+
+1. Manually
+
+   ```
+   python3 Documents/Dev/bot/src/server/app.py
+   ```
+
+1. Automate with Cron
+
+   1. Open crontab
+      ```
+      crontab -e
+      ```
+   
+   1. Add to the end of the file
+   
+      ```
+      @reboot python3 Documents/Dev/bot/src/server/app.py
+      ```
+
+
 
 ## Set up the Raspberry Pi
 
