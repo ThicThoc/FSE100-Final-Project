@@ -1,6 +1,9 @@
 from flask import Flask, render_template
+from gpiozero import LED
 
 app = Flask(__name__)
+
+led = LED(23)
 
 
 @app.route('/')
@@ -11,6 +14,10 @@ def index():
 @app.route('/command/<command_name>')
 def command(command_name):
     print(command_name)
+    if command_name == 'led-on':
+        led.on()
+    if command_name == 'led-off':
+        led.off()
     return 'success', 200
 
 
