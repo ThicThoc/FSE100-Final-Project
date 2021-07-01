@@ -4,6 +4,27 @@ Source Code for Electrosity's FSE 100 final project
 
 ---
 
+## Install Code
+
+1. Create Dev directory
+
+    ```
+    mkdir Documents/Dev
+    ```
+
+1. Install code from Github
+
+    ```
+    git clone https://github.com/ThicThoc/FSE100-Final-Project.git Documents/Dev/bot
+    ```
+
+1. Update code
+
+    ```
+    git -C Documents/Dev/bot pull origin main
+    ```
+
+
 ## Set up the Raspberry Pi
 
 Follow instructions [here](pi_setup.md)
