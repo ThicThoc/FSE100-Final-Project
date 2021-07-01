@@ -1,9 +1,22 @@
+import warnings
+
 from flask import Flask, render_template
-from gpiozero import LED
+from gpiozero.pins.mock import MockFactory
+from gpiozero.exc import BadPinFactory, PinFactoryFallback
+
+from gpiozero import Device, LED
+
+# Try-block for developing on non-Pi platforms
+# Gracefully test pin and set pin_factory to MockFactory if not on a Pi
+try:
+    warnings.filterwarnings("ignore", category=PinFactoryFallback)
+    led = LED(1)
+except BadPinFactory:
+    Device.pin_factory = MockFactory
+finally:
+    warnings.filterwarnings("default", category=PinFactoryFallback)
 
 app = Flask(__name__)
-
-led = LED(23)
 
 
 @app.route('/')
