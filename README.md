@@ -7,27 +7,35 @@ Source Code for Electrosity's FSE 100 final project
 ## Install Code
 
 1. Create Dev directory
-
     ```
     mkdir Documents/Dev
     ```
 
 1. Install code from Github
-
     ```
     git clone https://github.com/ThicThoc/FSE100-Final-Project.git Documents/Dev/bot
     ```
 
 1. Update code
-
     ```
     git -C Documents/Dev/bot pull origin main
     ```
 
+1. Automatic pull on startup
+
+   1. Open crontab
+      ```
+      crontab -e
+      ```
+
+   1. Append to end of file
+      ```
+      @reboot git -C Documents/Dev/bot pull origin main
+      ```
+
 ## Start Server
 
 1. Manually
-
    ```
    python3 Documents/Dev/bot/src/server/app.py
    ```
@@ -39,13 +47,10 @@ Source Code for Electrosity's FSE 100 final project
       crontab -e
       ```
    
-   1. Add to the end of the file
-   
+   1. Append to end of file
       ```
       @reboot python3 Documents/Dev/bot/src/server/app.py
       ```
-
-
 
 ## Set up the Raspberry Pi
 
