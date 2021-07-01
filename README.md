@@ -7,3 +7,17 @@ Source Code for Electrosity's FSE 100 final project
 ## Set up the Raspberry Pi
 
 Follow instructions [here](pi_setup.md)
+
+## GPIOZero
+
+- [Documentation](https://gpiozero.readthedocs.io/en/stable/index.html)
+
+## MegaPi
+
+- [DC Motor Control](https://gist.github.com/xeecos/5fa6cb5876a8c9449562d8026942fff1/revisions)
+- [Sensor](https://gist.github.com/xeecos/ceeb8fd83cc15b4e83b713bb75a982fd)
+
+## Actuator
+
+- [Amazon](https://www.amazon.com/Jameco-Reliapro-PDL-50-Driven-Actuator/dp/B01MRDHWGY)
+- [Jameco](https://www.jameco.com/z/PDL-50-Jameco-Valuepro-Automotive-Door-Lock-Actuator-12-VDC-Intermittent-Duty_2230221.html)
